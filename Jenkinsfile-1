@@ -5,9 +5,12 @@ pipeline {
     stage('Hello') {
       steps {
         sh '''
-          ansible --version
+          pwd
+          ls
+          ifconfig
           ansible-playbook --version
           ansible-galaxy --version
+          ansible --version
         '''
       }
     }
